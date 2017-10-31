@@ -17,7 +17,7 @@ void consume_output() {
 
 int main(int argc, char** argv) {
 
-	grbl_init();
+    grbl_init();
 
     gc_execute_line("G0 G49 G40  G17 G80 G50 G90 ");
     gc_execute_line("M6 T0");

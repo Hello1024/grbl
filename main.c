@@ -7,7 +7,6 @@ void consume_output() {
   plan_block_t *pb = plan_get_current_block();
 
   if (pb) {
-    plan_cycle_reinitialize();
     printf("Move X: %d, Y:, %d, Z: %d, speed_squared: %2.f\n", pb->steps[0], pb->steps[1], pb->steps[2], plan_get_exec_block_exit_speed_sqr());
     plan_discard_current_block();
   }

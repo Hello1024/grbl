@@ -33,4 +33,6 @@ void st_update_plan_block_parameters();
 // Motion output needs to be consumed before further processing can occur.
 void consume_output();
 
+void grbl_init();
+
 #endif

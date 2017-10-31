@@ -9,6 +9,6 @@ void protocol_auto_cycle_start() {
 
 // Block until all buffered steps are executed
 void protocol_buffer_synchronize() {
-  if (plan_get_current_block())
+  while (plan_get_current_block())
     consume_output();
 };
